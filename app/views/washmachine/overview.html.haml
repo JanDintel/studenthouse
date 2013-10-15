@@ -1,0 +1,15 @@
+%h1 Overview
+
+%div{'ng-controller' => 'WashmachineCtrl'}
+  %form{'ng-submit' => 'newWashmachine()'}
+    %input{'ng-model' => 'newWashmachine.roomnumber', type: 'number'}
+    %input{'ng-model' => 'newWashmachine.durance', type: 'number'}
+    %input{type: 'submit', value: 'Add'}
+
+  %table
+    %tr
+      %th Roomnumber
+      %th Durance
+    %tr{'ng-repeat' => 'washmachine in washmachines'}
+      %td {{washmachine.roomnumber}}
+      %td {{washmachine.durance}} minutes

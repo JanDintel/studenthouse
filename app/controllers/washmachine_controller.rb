@@ -1,9 +1,9 @@
 class WashmachineController < ApplicationController
 
-  # def index
-  # end
+  def overview
+  end
 
-  respond_to :json
+  respond_to(:json)
 
   def index
     respond_with Washmachine.all
