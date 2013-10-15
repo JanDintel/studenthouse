@@ -1,1 +1,7 @@
 %h1 Index
+
+%div{'ng-controller' => 'WashmachineCtrl'}
+  %form
+    %input{'ng-model' => 'newEntry.roomnumber', type: 'text'}
+
+{{newEntry.roomnumber}}
