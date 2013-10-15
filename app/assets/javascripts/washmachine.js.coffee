@@ -1,3 +1,9 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+@WashmachineCtrl = ($scope) ->
+  $scope.entries = [
+    {roomnumber: "3", durance: "60"}
+    {roomnumber: "5", durance: "90"}
+  ]
+
+  $scope.addEntry = ->
+    $scope.entries.push($scope.newEntry)
+    $scope.newEntry = {}

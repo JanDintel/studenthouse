@@ -1,7 +1,15 @@
 %h1 Index
 
 %div{'ng-controller' => 'WashmachineCtrl'}
-  %form
+  %form{'ng-submit' => 'addEntry()'}
     %input{'ng-model' => 'newEntry.roomnumber', type: 'text'}
+    %input{'ng-model' => 'newEntry.durance', type: 'text'}
+    %input{type: 'submit', value: 'Add'}
 
-{{newEntry.roomnumber}}
+  %table
+    %tr
+      %th Roomnumber
+      %th Durance
+    %tr{'ng-repeat' => 'entry in entries'}
+      %td {{entry.roomnumber}}
+      %td {{entry.durance}} minutes
