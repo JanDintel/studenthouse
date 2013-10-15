@@ -7,11 +7,12 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'therubyracer', platforms: :ruby
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'haml'
+# Not needed for AngularJS
+# gem 'therubyracer', platforms: :ruby
+# gem 'jquery-rails'
+# gem 'turbolinks'
 
+gem 'haml'
 gem 'angularjs-rails'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
